@@ -37,7 +37,7 @@ body {
   /* Elementlar o'tasiga nisbatan joylashadi va o'z o'rnini yuqotadi */
   position: absolute;
   transition: 1s;
-  /* elementlar 100% pastga tushadi y'ni section bo'limidan chiqib ketadi */
+  /* elementlar 100% tepaga ko'tariladi */
   transform: translateY(100%);
 }
 
@@ -56,7 +56,7 @@ body {
   height: 280px;
   /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
   left: 5%;
-  /* Element pastga ta1alib turadi */
+  /* Element pastga taqalib turadi */
   bottom: 0;
   /* Elementning fon rasmi */
   background: #fff url('../img/phone.jpg') center no-repeat;
@@ -72,7 +72,7 @@ body {
   height: 380px;
   /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
   left: 10%;
-  /* Element pastga ta1alib turadi */
+  /* Element pastga taqalib turadi */
   bottom: 0;
   /* Elementning fon rasmi */
   background: #fff url('../img/tablet.jpg') center no-repeat;
@@ -89,7 +89,7 @@ body {
   height: 480px;
   /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
   left: 15%;
-  /* Element pastga ta1alib turadi */
+  /* Element pastga taqalib turadi */
   bottom: 0;
   /* Elementning fon rasmi */
   background: #fff url('../img/desctop.jpg') center no-repeat;
