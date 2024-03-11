@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Elementlarno o'rab turuvchi bo'lim klaslari */
+.section {
+  /* elementlarni o'rab turuvchi bo'lim orqa foni */
+  background-color: #f2395a;
+  /* Matin rangi */
+  color: #fff;
+  /* Bo'lim eni */
+  height: 100vh;
+  /* elementlarni 'ortaga keltirish klaslari */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* bo'lim ichidagi elementlar position: absolute; bolganda bo'limdan chiqib ketmasligi uchun */
+  position: relative;
+  /* Bo'lim ichidagi elementlar transform holatida 3D efektga ega bo'lishi uchun  beriladi */
+  perspective: 1000px;
+}
+
+.heading {
+ margin-left: 20%;
+}
+
+
+/* Telefon, planshet va kompyuter formatlari elementlarining umumiy klaslari */
+.phone,
+.tablet,
+.desctop {
+  /* orqa fon rangi */
+  background-color: #fff;
+  /* Elementlar soyasi */
+  box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, 0.3);
+  /* Elementlar o'tasiga nisbatan joylashadi va o'z o'rnini yuqotadi */
+  position: absolute;
+  transition: 1s;
+  /* elementlar 100% pastga tushadi y'ni section bo'limidan chiqib ketadi */
+  transform: translateY(100%);
+}
+
+
+/* Elementlarni o'rab turuvchi bo'lim hover bo'lganda har bir element 10px tepaga ko'tariladi, X o'qi bo'ylab 15 gradus, Z o'qi bo'ylab 10 gradus musbat tomonga boruladi */
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desctop {
+  transform: translateY(10px) rotateX(15deg) rotateZ(10deg);
+}
+
+/* Telefon elementining alohida klaslari */
+.phone {
+  /* Element o'lchamlari */
+  width: 240px;
+  height: 280px;
+  /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
+  left: 5%;
+  /* Element pastga ta1alib turadi */
+  bottom: 0;
+  /* Elementning fon rasmi */
+  background: #fff url('../img/phone.jpg') center no-repeat;
+  z-index: 3;
+  /* Elementning otasi hover bo'lganda holatini o'zgartirish uchun ketadigan vaqt */
+  transition-delay: 0.2s;
+}
+
+/* Planshet elementining alohida klaslari */
+.tablet {
+  /* Element o'lchamlari */
+  width: 360px;
+  height: 380px;
+  /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
+  left: 10%;
+  /* Element pastga ta1alib turadi */
+  bottom: 0;
+  /* Elementning fon rasmi */
+  background: #fff url('../img/tablet.jpg') center no-repeat;
+  z-index: 1;
+  /* Elementning otasi hover bo'lganda holatini o'zgartirish uchun ketadigan vaqt */
+  transition-delay: 0.4s;
+}
+
+
+/* Kompyuter elementining alohida klaslari */
+.desctop {
+  /* Element o'lchamlari */
+  width: 680px;
+  height: 480px;
+  /* Element chapdan o'z o'lchamining 5% i miqtorida joy tashlab joyashadi */
+  left: 15%;
+  /* Element pastga ta1alib turadi */
+  bottom: 0;
+  /* Elementning fon rasmi */
+  background: #fff url('../img/desctop.jpg') center no-repeat;
+  /* Elementning otasi hover bo'lganda holatini o'zgartirish uchun ketadigan vaqt */
+  transition-delay: 0.6s;
+}
